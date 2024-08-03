@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radical Candor Feedback</title>
+    <style>
+        #canvas {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            position: relative;
+            margin-top: 20px;
+        }
+        .note {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            cursor: move;
+        }
+        .green-note { background-color: green; }
+        .red-note { background-color: red; }
+    </style>
+</head>
+<body>
+    <h1>Radical Candor Feedback</h1>
+    <button onclick="addNote('green')">Add Positive Feedback</button>
+    <button onclick="addNote('red')">Add Critical Feedback</button>
+    <div id="canvas"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
